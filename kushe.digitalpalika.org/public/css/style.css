@@ -1,0 +1,1883 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+
+.main-menu{
+
+    border-radius: 10px;
+    /*width:15%;*/
+    height: 100vh;
+    overflow-y: scroll;
+    margin-top: 10px;
+    background-color: white;
+    scrollbar-width: none;
+
+
+
+}
+
+.main-menu ul
+{
+    /*align-items: center;*/
+    margin-left: -30px;
+}
+
+.main-menu ul li{
+    list-style: none;
+
+
+}
+.collapse-menu{
+    flex: 2 0 15%;
+    max-width:100%;
+    /*padding-left: 15px;*/
+}
+
+
+.display-view {
+    visibility: visible;
+}
+
+.display-none
+{
+    height: 0px;
+    visibility: collapse;
+}
+
+
+
+
+.main-menu .box{
+
+    width: 80px;
+    height: auto;
+    /*border:1px solid #e7e7e7;*/
+    /*margin:10px;*/
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 8px;
+    /*top:50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50% , -50%);*/
+    -webkit-transition: all 0.5s ease-in-out;
+    /* border: 1px solid green; */
+}
+.main-menu .box:hover{
+       background-color: #44A64B;
+       transition: 0.3s;
+}
+.main-menu .box:hover .menu-title{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-gaupalika{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-nagarik{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .title-nagarik{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .title-nagarpalika{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-title-budget{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-title-commu{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-title-hr{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-title-pis{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .pis1{
+    color: #FFFFFF;
+}
+.main-menu .box:hover .pis2{
+    color: #FFFFFF;
+}
+.main-menu .box:active{
+    background: color #44a64b !important;;
+}
+.main-menu img{
+    /*height: 30px;*/
+    /*width: 30px;*/
+    /*position: relative;*/
+    /*left: 35px;*/
+    /*top:20px;*/
+    /*filter:sepia(100%) hue-rotate(190deg) saturate(500%);*/
+    height: 25px;
+    width: 25px;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ment img{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left:45px;
+    top:20px;
+}
+.main-menu .box:hover img{
+    filter:brightness(0) invert(1);
+}
+.box #dot{
+    color:#898989;
+    float:right;
+    position:relative;
+    top:0px;
+    font-size:25px;
+}
+.main-menu a{
+    text-decoration: none;
+}
+.menu-title{
+    /*position: relative;*/
+
+    margin-top: 5px;
+    text-decoration: none;
+    color:green;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .menu-gaupalika{
+    position: relative;
+    top:24px;
+    left:24px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.title-nagarik{
+    position: relative;
+    top:36px;
+    left:22px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center!important;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .menu-nagarik{
+    position: relative;
+    top:60px;
+    left:1px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.title-nagarpalika{
+    position: relative;
+    top:41px;
+    left:-35px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center!important;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .menu-title-commu{
+    position: relative;
+    top:56px;
+    left:5px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .menu-title-hr{
+    position: relative;
+    top:55px;
+    left:-12px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .menu-title-budget{
+    position: relative;
+    top:59px;
+    left:6px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .menu-title-pis{
+    position: relative;
+    top:24px;
+    left:12px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .pis1{
+    position: relative;
+    top:24px;
+    left:18px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .pis2{
+    position: relative;
+    top:19px;
+    left:35px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.menu-content{
+    background-color:#e5e5e54f;
+    height: auto;
+    width: 77%!important;
+}
+.main-menu .menu-title-Settings{
+    position: relative;
+    top:59px;
+    left:3px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .menu-title-User{
+    position: relative;
+    top:23px;
+    left:29px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.title-user{
+    position: relative;
+    top:38px;
+    left:-20px;
+    text-decoration: none;
+    color:#898989;
+    text-align: center!important;
+    font-size: 13px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.main-menu .box:hover .title-user {
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-title-User {
+    color: #FFFFFF;
+}
+.main-menu .box:hover .menu-title-Settings {
+    color: #FFFFFF;
+}
+/* navbar box */
+.content-navbar
+
+{
+    --Font-color: blue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /*border-radius:5px;*/
+}
+
+.content-body{
+    top:10px;
+}
+.content-navbar-box{
+
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    overflow-x: auto;
+    scrollbar-width:thin;
+
+
+
+}
+
+.content-navbar-box div
+{
+    /*margin: 5px;*/
+    /*height: 25px;*/
+    width: 200px;
+    /*margin: auto;*/
+    border: white 0.5px solid;
+    padding: 3px;
+
+
+
+}
+
+.content-navbar-box div:hover{
+    /*background-color: green;*/
+    /*color: white !important;*/
+    border-radius: 5px;
+    border: green 0.5px solid;
+    background-color: #44A64B;
+    /*transition: 0.3s;*/
+    --Font-color: white;
+
+}
+
+.content-navbar-box div:hover .navbar-box-title
+{
+    color: white;
+}
+
+.content-navbar-box div:hover img
+{
+    filter:brightness(0) invert(1);
+    transition: 0.2s;
+}
+
+.content-navbar-box a{
+    text-decoration: none;
+    /*color:#898989;*/
+    color: deepskyblue;
+}
+.content-navbar-box .navbar-box-title{
+    /*position: relative;*/
+    top:10px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight:500;
+    font-family: 'Poppins' sans-serif;
+    color: green;
+}
+
+
+
+
+.content-navbar-box img{
+
+    /*filter:sepia(100%) hue-rotate(190deg) saturate(500%);*/
+
+    height: 16px;
+    /*width: 25px;*/
+    /*position: relative;*/
+    top:10px;
+    padding-left: 10px;
+    margin-top: -3px;
+
+
+}
+/* navbar box  */
+
+
+/* Nagarik badapatra  */
+
+.btn-success{
+    background-color: #44A64B;
+}
+.newBox ul li{
+    list-style: none;
+}
+.newBox ul li .label
+{
+    height: 49px;
+    width: 134px;
+    border:1px solid #ebebeb;
+}
+.nagarik-heading{
+    font-size:28px;
+    font-weight: 900;
+    color: #0c213a;
+}
+.nagarik-heading a{
+    text-decoration: none;
+    color:#0C213A;
+
+}
+.nagarik-sub-box .box{
+    height: 149px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border:1px solid #e7e7e7;
+    margin:5px;
+    padding:5px;
+
+}
+.nagarik-sub-box .box a{
+    text-decoration: none;
+    color:#898989;
+}
+
+
+.nagarik-sub-box .box .sub-box-title{
+    text-align: center;
+    position: relative;
+    top:81px;
+    /*left:7px;*/
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-ghar, .sub-box-title-sewa{
+    text-align: center;
+    position: relative;
+    top:80px;
+    /*left:1px;*/
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-wada{
+    position: relative;
+    top:82px;
+    left:1px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+#subidha{
+    position: relative;
+    top:76px;
+    left:47px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+#bato{
+    position: absolute;
+    top:239px;
+    left:84px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.nagarik-sub-box #box{
+    height: 149px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border:1px solid #e7e7e7;
+    margin:5px;
+    padding:5px;
+}
+.nagarik-sub-box #box a{
+    text-decoration: none;
+    color:#898989;
+    text-align: left;
+}
+.nagarik-sub-box #box img{
+    height:40px;
+    width: 40px;
+    position: relative;
+    top:20px;
+    left:57px;
+}
+.nagarik-sub-box #darta{
+    height: 149px;
+    width: 180px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border:1px solid #e7e7e7;
+    margin:5px;
+    padding:5px;
+}
+.nagarik-sub-box #darta a{
+    text-decoration: none;
+    color:#898989;
+    text-align: left;
+}
+.nagarik-sub-box #darta img{
+    height:40px;
+    width: 40px;
+    position: relative;
+    top:20px;
+    left:65px;
+}
+.nagarik-sub-box #darta .sub_box_title_Nagarik{
+    font-family: 'Poppins'sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:#898989!important;
+    position: relative;
+    top:81px !important;
+    left:14px;
+}
+.nagarik-sub-box #box .sub_box_title_Nagarik{
+    font-family: 'Poppins'sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:#898989!important;
+    position: relative;
+    top:81px !important;
+    left:4px;
+}
+
+
+.nagarik-sub-box #box .sub_box_title_Nikasan{
+    font-family: 'Poppins'sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:#898989!important;
+    position: relative;
+    top:81px !important;
+    left:14px;
+}
+
+.nagarik-sub-box #box .sub_box_title_krisi{
+    font-family: 'Poppins'sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:#898989!important;
+    position: relative;
+    top:81px !important;
+    left:22px;
+}
+
+.nagarik-sub-box #box .sub_box_title_address{
+    font-family: 'Poppins'sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:#898989!important;
+    position: relative;
+    top:81px !important;
+    left:-9px;
+}
+
+.nagarik-sub-box #box .sub_box_title_address .sifa{
+    font-family: 'Poppins'sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:#898989!important;
+    position: relative;
+    top:-14px !important;
+    left:14px;
+}
+
+.nagarik-sub-box #box .sub_box_title_Nagarik .nsifa{
+    font-family: 'Poppins'sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:#898989!important;
+    position: relative;
+    top:-11px !important;
+    left: -5!important;
+}
+
+.sewa{
+    position: relative;
+    top:63px;
+    left:70px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;}
+.sub-box-title-byapaar, .sub-box-title-bides{
+    position: relative;
+    top:77px;
+    left:4px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-pratinidhi{
+    position: relative;
+    top:77px;
+    left:9px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.bides{
+    position: relative;
+    top:36px;
+    left:50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;}
+.sub-box-title-basobas{
+    position: relative;
+    top:74px;
+    left:-8px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+
+.sub-box-title-anya{
+    position: relative;
+    top:70px;
+    left:30px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.nagarik-sub-box .box img{
+    height:40px;
+    width: 40px;
+    position: relative;
+    top:20px;
+    left:65px;
+}
+.nagarik-sub-box .other img{
+    height:20px;
+    width: 40px;
+    position: relative;
+    top:20px;
+    left:65px;
+}
+.nagarik-sub-box #sewa img{
+    height:27px;
+    width: 56px;
+    position: relative;
+    top:34px;
+    left:60px;
+}
+.newBox label{
+    /* border:1px solid red; */
+    padding:10px;
+}
+.newBox input{
+    position: relative;
+    left:15px;
+}
+/* ghar/jagg/bato */
+.arrow{
+
+    margin-right: 5px;
+    margin-top: 2px;
+    font-size:23px;
+    color: white !important;
+
+}
+/* Style the tab */
+.tab {
+    float: left;
+    background-color:#e7e7e7;
+    width:25%;
+    height:auto;
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding:20px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s;
+
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color:#44A64B;
+    color:#FFFFFF;
+  }
+
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color:#44A64B;
+    color:#FFFFFF;
+  }
+  .gharjaggacontent .heading h6{
+      color:#0c213a;
+      font-weight: 600;
+      font-size: 20px;
+      font-family: 'Poppins'sans-serif;
+      width:200%!important;
+  }
+  /* Style the tab content */
+  .gharjaggacontent {
+    float: left;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;;
+    width:75%;
+    border-left: none;
+    height:auto;
+    display: none;
+  }
+  .ghar-content .sub-heading{
+      color:#484848;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'Poppins'sans-serif;
+  }
+  .ghar-content .content{
+    color:#898989;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins'sans-serif;
+    text-align: justify;
+}
+.sub-btn a button{
+    background-color:#FFFFFF;
+    border:1px solid #44A64B;
+    width: 66px;
+    height:33px;
+    border-radius: 4px;
+    color:#484848;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins' sans-serif;
+}
+.sub-btn a button:hover{
+    background-color: #44A64B;
+    color:#FFFFFF;
+}
+.sub-btn a button:active{
+    background-color: #44A64B;
+    color:#FFFFFF;
+}
+#deleted{
+    position:relative;
+    left:-10px;
+    top:2px;
+    font-size: 24px;
+}
+/* ghar/ jagga /bato */
+
+/* nagarik badapatra */
+/* gaupalika nagarpalika  */
+.gaupalika{
+
+    border:1px solid #e5e5e5;
+    background-color:#FFFFFF ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    height: 55px;
+    overflow: hidden !important;
+}
+.gaupalika button{
+    float: left;
+    border:none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color:#898989;
+    padding: 15px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+.gaupalika button:hover{
+    background-color: #e5e5e5;
+}
+.gaupalika button.active{
+    background-color: #e5e5e5;
+}
+.gaupalikaContent{
+    display: none;
+}
+.collapsed a{
+    text-decoration: none!important;
+}
+.sub-box-title-mayor{
+    position: relative;
+    top:81px;
+    left:-7px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;}
+.mayor{
+    position:absolute;
+    top:282px;
+    left:72px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sir{
+    position: relative;
+    top:86px;
+    left:-66px;
+
+}
+/* jankari */
+.sub-box-nagarpalika{
+    position: relative;
+    top:81px;
+    left:10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.chaya{
+    position: relative;
+    top:68px;
+    left:32px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-akasmik{
+    position: relative;
+    top:81px;
+    left:3px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-Sewa{
+    position: relative;
+    top:81px;
+    left:32px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-manch{
+    position: relative;
+    top:81px;
+    left:15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.manch1{
+    position: relative;
+    top:67px;
+    left:42px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-niya{
+    position: relative;
+    top:81px;
+    left:-3px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.uutpadan{
+    position: relative;
+    top:64px;
+    left:-12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-Byapar{
+    position: relative;
+    top:81px;
+    left:0px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.bya{
+    position: relative;
+    top:64px;
+    left:0px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-Bikas{
+    position: relative;
+    top:81px;
+    left:10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sha{
+    position: relative;
+    top:59px;
+    left:-5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-Swasthya{
+    position: relative;
+    top: 81px;
+    left:12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.ken{
+    position: relative;
+    top:60px;
+    left:-27px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-kar{
+    position: relative;
+    top:81px;
+    left:24px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-Aya{
+    position: relative;
+    top:81px;
+    left:30px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-jana{
+    position: relative;
+    top:81px;
+    left:25px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-paryatak{
+    position: relative;
+    top:81px;
+    left:1px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+#sthal{
+    position: relative;
+    top:67px;
+    left:60px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-pro{
+    position: relative;
+    top:81px;
+    left:21px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-saichik{
+    position: relative;
+    top:81px;
+    left:6px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.box .anya-img img{
+    height: 20px;
+    width: 40px;
+    position: relative;
+    top:28px;
+    left:64px;
+}
+/* Pratinidi*/
+.pratinidhi-icon img{
+    height: 21px;
+    width: 32.2px;
+    position: absolute;
+    left:16px;
+    top:19px;
+}
+.pratinidhi-icon .sub-title{
+    color:#1b25b9;
+    font-size: 14px;
+    font-weight: 500;
+    font-family:'Poppins' sans-serif;
+    position: absolute;
+    left:60px;
+    top:25px;
+}
+.accordion-body .box .box-img{
+    width: 180px;
+    height:163px;
+    border:1px solid #e7e7e7;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    margin: 5px;
+    padding: 5px;
+}
+.accordion-body .box .box-img img{
+    height:74px;
+    width: 74px;
+    border:none;
+    border-radius: 50%;
+    position: relative;
+    left:50px;
+    top:10px;
+}
+.wada-title{
+    font-size: 16px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+    color:#0c213a;
+    text-transform: capitalize;
+}
+.accordion-body .box .box-img .title-name{
+    color:#0c213a;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    top:15px;
+}
+.accordion-body .box .box-img .post-title{
+    color:#898989;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+/* gaupalika nagarpalika */
+/* services  */
+.sub-box-title-services{
+    position: relative;
+    top:81px;
+    left:12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-service{
+    position: relative;
+    top:81px;
+    left:22px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-sifarish{
+    position: relative;
+    top:81px;
+    left:14px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub_box_title_Naksa{
+    position: relative;
+    top:79px;
+    left:20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub_box_title_Publication{
+    position: relative;
+    top:81px;
+    left:5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub_box_title_Sendsms{
+    position: relative;
+    top:81px;
+    left:-13px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+
+.sub-box-title-lekha{
+    position: relative;
+    top:81px;
+    left:27px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-jinsi{
+    position: relative;
+    top:81px;
+    left:26px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-suchana{
+    position: relative;
+    top:81px;
+    left:4px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+#prabidhi{
+    position: relative;
+    top:81px;
+    left:-20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-krisi{
+    position: relative;
+    top:79px;
+    left:30px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+/* services  */
+/* inventory  */
+.sub-box-inventory{
+    position: relative;
+    top:76px;
+    left:0px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-reso{
+    position: relative;
+    top:76px;
+    left:12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-inpaper{
+    position: relative;
+    top:76px;
+    left:-14px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-plans{
+    position: relative;
+    top:76px;
+    left:20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-report{
+    position: relative;
+    top:76px;
+    left:16px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+/* inventory  */
+/*communication  */
+
+.change-psw-box .sub-title{
+    font-size: 16px;
+    font-weight: 600;
+    color:#0c213a;
+    font-family: 'Poppins' sans-serif;
+    position: relative;
+    top:10px;
+    left:10px;
+}
+
+.sub-box-title-internal{
+    position: relative;
+    top:81px;
+    left:-5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-sub-title-internal{
+    position: relative;
+    top:81px;
+    left:-24px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-external{
+    position: relative;
+    top:81px;
+    left:10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-sub-title-external{
+    position: relative;
+    top:58px;
+    left:-24px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-title-meeting{
+    position: relative;
+    top:81px;
+    left:1px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+.sub-box-sub-title-meeting{
+    position: relative;
+    top:43px;
+    left:-19px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins'sans-serif;
+}
+
+.icon-image
+{
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered_text
+{
+    text-align: center;
+    padding: 10px;
+}
+
+.row-padding5
+{
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content
+{
+    /*width: 85%;*/
+}
+
+#sidebar
+{
+    width:15%;
+    height: 100vh;
+    overflow-y: scroll
+}
+
+.collapse {
+    visibility: hidden;
+}
+.collapse.show {
+    visibility: visible;
+    display: block;
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+
+
+
+
+
+
+/*customised scroll bar*/
+/* width */
+
+::-webkit-scrollbar {
+
+    border-radius: 10px;
+    width: 1px!important;
+}
+
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.boxs
+{
+    margin-top: 10px;
+    /*margin: 30px;*/
+}
+
+.button_box
+{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border:1px solid green;
+    text-align: center;
+    /*box-shadow: 1px 1px 4px 4px green;*/
+}
+
+.button_box:hover{
+    background-color: lightgreen;
+    --Font-color: white!important;
+}
+
+.button_box img
+{
+    margin-top: 30px;
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.button_box span
+{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    --Font-color: black;
+}
+
+.button_box a
+{
+    text-decoration: none;
+}
+
+
+
+
+
+.asterik {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*breadcrumb css*/
+#breadcrumb {
+    margin-top: 10px;
+    list-style: none;
+    display: inline-block;
+}
+#breadcrumb .icon {
+    font-size: 14px;
+}
+#breadcrumb li {
+    float: left;
+    /*padding-left: -1px;*/
+
+
+}
+#breadcrumb li a {
+
+    color: #fff;
+    display: block;
+    background: #3498db;
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+}
+#breadcrumb li:nth-child(even) a {
+    background-color: #1abc9c;
+}
+#breadcrumb li:nth-child(even) a:before {
+    border-color: #1abc9c;
+    border-left-color: transparent;
+}
+#breadcrumb li:nth-child(even) a:after {
+    border-left-color: #1abc9c;
+}
+#breadcrumb li:first-child a {
+    padding-left: 15px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+}
+#breadcrumb li:first-child a:before {
+    border: none;
+}
+#breadcrumb li:last-child a {
+    padding-right: 15px;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 4px 4px 0;
+}
+#breadcrumb li:last-child a:after {
+    border: none;
+}
+#breadcrumb li a:before, #breadcrumb li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0 solid #3498db;
+    border-width: 20px 10px;
+    width: 0;
+    height: 0;
+}
+#breadcrumb li a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+#breadcrumb li a:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #3498db;
+}
+#breadcrumb li a:hover {
+    background-color: #2980b9;
+}
+#breadcrumb li a:hover:before {
+    border-color: #2980b9;
+    border-left-color: transparent;
+}
+#breadcrumb li a:hover:after {
+    border-left-color: #2980b9;
+}
+#breadcrumb li a:active {
+    background-color: #16a085;
+}
+#breadcrumb li a:active:before {
+    border-color: #16a085;
+    border-left-color: transparent;
+}
+#breadcrumb li a:active:after {
+    border-left-color: #16a085;
+}
+
+
+
+.btn-card
+{
+    height: 80vh;
+}
+
+.card
+{
+    /*height: 80vh;*/
+    overflow: visible;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.card-header
+{
+    background-color: #44A64B;
+    color:white;
+    font-weight: 700;
+    text-align: center;
+
+    height: 40px;
+
+    margin-bottom: 5px;
+}
+
+.card-title
+{
+
+
+    font-size:18px;
+
+}
+
+.card-body
+{
+    font-size: 14px;
+}
+
+.form-group
+{
+    margin-top: 18px;
+}
+
+.form-label
+{
+    font-weight: 600;
+}
+
+.form-control
+{
+
+    /*border: black 2px solid!important;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    margin-top: 4px;
+
+
+}
+
+
+.btn_palika
+{
+
+    background-color: dodgerblue;
+    color: #ffffff;
+    border: none;
+
+    padding: 6px;
+    margin-left: 5px;
+    text-align: center;
+    margin-top: -5px;
+
+    font-size: 15px;
+    height: 35px;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.btn_palika:hover
+{
+    background-color: lightblue;
+}
+
+
+
+
+/*nibedan csses*/
+.input-text{
+    border: 0px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 2px dotted;
+    margin-top: 3px;
+}
+.input-span-text
+{
+    border: 0px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    font-weight: 550;
+}
+
+.error-input
+{
+    border-color: red;
+}
+
+
+.div-nibedan
+{
+    margin-top: 20px;
+}
+.flex-nibedan
+{
+    margin-top: 1px;
+}
+
+.sub-flex-nibedan
+{
+    margin-left: 1px;
+}
+
+
+.nibedan-b{
+    padding: 3px;
+}
+
+.file_upload_div
+{
+    margin-top: 3px;
+    border: black 1px solid;
+    width: 400px;
+    /*background-color: ghostwhite;*/
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+/*remove visibility of */
+.filepond--credits
+{
+    visibility: hidden;
+}
+
+
+.full_width{
+    width: 100%;
+}
+
+
+.pull-right
+{
+    text-align: right;
+    float: right;
+}
+
+.pull-left
+{
+    text-align: left;
+    float: left;
+}
+
+.pull-center{
+    text-align:center;
+}
+
+/* communication */
+
+
+/*datatable css*/
+.main_th
+{
+    white-space: nowrap;
+}
+.sub_th{
+    white-space: nowrap;
+}
+
+
+
+.error-div
+{
+    width: 100%;
+
+}
+
+
+
+
+
+/*//css for sifaris*/
+.input-number
+{
+    width: 50px;
+    text-align: center;
+
+}
+
+.margin-left50
+{
+    margin-left: 50px;
+}
+
+.margin-left60
+{
+    margin-left: 80px;
+}
+.margin-left5{
+    margin-left: 5px;
+}
+
+
+.margin-left20
+{
+    margin-left: 20px;
+}
+
+.margin-top-10{
+    margin-top: 3px!important;
+}
+
+.margin-top3{
+    margin-top: 3px!important;
+}
+
+.b_title
+{
+    margin-right: 50px; font-size: 30px
+}
+
+.width300{
+    width: 300px!important;
+}
+
+.height150{
+    height: 150px!important;
+}
+
+
+
+
+
+
+.page_table
+{
+    text-align: center;
+    /*float: right;*/
+    width: 100%;
+    font-weight: 500;
+
+}
+
+.page_table td,th
+{
+    height: 25px;
+    border: 1px solid black
+
+}
+
+.page_table tbody td
+{
+    /*height: 150px;*/
+
+}
+.text-center
+{
+    text-align: center!important;
+    width: 100%;
+}
+.text_bold{
+    font-weight: bold;
+}
+
+.text_light{
+    font-weight: 50;
+}
+
+.margin-left100
+{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 0px;
+}
+
+.div-border{
+    border: 1px solid black;
+    padding-bottom: 15px;
+}
+
+
+.float-right{
+    float: right;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.text-red
+{
+    color: red;
+}
+
+.font-size30
+{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*hide scroll bar*/
+.content-navbar-box::-webkit-scrollbar {
+    height: 5px;
+}
+
+.content-navbar-box::-webkit-scrollbar-thumb {
+    background-color: #00a2e8;
+}
+
+.content-navbar-box::-webkit-scrollbar-track-piece:end {
+    margin-right: 5px;
+}
+
+.content-navbar-box::-webkit-scrollbar-track-piece:start {
+    margin-left: 5px;
+}
+
+

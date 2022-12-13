@@ -1,0 +1,99 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.image_side{
+    text-transform: uppercase;
+    font-size:34px;
+    font-weight:900;
+    font-family:'Poppins'sans-serif;
+    color:#41b883;
+}
+.input_side{
+    border:none;
+    border-left:1px solid #e7e7e7;
+    margin: auto;
+    width: 50%;
+    padding:15%;
+}
+.input_title h6{
+    color:#41b883;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins'sans-serif;
+}
+.input_title p{
+    color:#a3a3a3;
+    font-family: 'Poppins'sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* input */
+.input-group-text {
+    display: flex;
+    align-items: center;
+    /* padding: .375rem .75rem; */
+    /* font-size: 1rem; */
+    font-weight: 400;
+    color: #a3a3a3!important;
+    text-align: center;
+    background-color: #ffffff!important;
+    border-left: 1px solid #41b883 !important;
+    border-radius:8px!important;
+    border-right: none!important;
+}
+.form_input-text{
+    background-color: #ffffff!important;
+    border-right: none!important;
+    height: 59px;
+}
+.form_input input{
+    border-left: none!important;
+
+}
+.form_input input:focus{
+    box-shadow: none!important;
+    outline: none!important;
+    border-color:#41b883!important;
+}
+.input-group-prepend, .input-group-text{
+    height: 59px;
+    border-radius: 8px;
+    border:1px solid #a3a3a3;
+}
+.form-switch .form-check-input {
+    width: 2em;
+    margin-left: -2.5em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    background-position: left center;
+    border-radius: 2em;
+    transition: background-position .15s ease-in-out;
+    font-size: 20px!important;
+}
+.form-switch label{
+    color:#a3a3a3;
+    font-family: 'Poppins'sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+#got a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins'sans-serif;
+    font-weight: 400;
+    color:#41b883;
+}
+.form-check-input:checked{
+    border:1px solid #41b883!important;
+    background-color: #41b883!important;
+}.admin_btn button{
+    height:3rem;
+    width:10rem;
+    font-family: 'Poppins'sans-serif;
+    width: 400;
+    font-size:14px;
+    border-radius: 82px;
+    margin:5%;
+}

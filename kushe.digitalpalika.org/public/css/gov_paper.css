@@ -1,0 +1,105 @@
+.birthReg{
+    border:5px solid #000;
+    height:auto;
+}
+.marriageReg{
+    border:5px solid #DC143C;
+    height: auto;
+}
+.birthHead{
+    height:auto;
+    color:#DC143C;
+}
+.marriagehead{
+    color:#000;
+    font-size:2rem;
+    position: relative;
+    top:-50px;
+}
+.birthLabel{
+    text-align:justify;
+}
+.title{
+    font-size:25px;
+}
+#sub-title{
+    font-size:20px;
+    position: relative;
+    top:-17px;
+}
+#heading{
+    position: relative;
+    top:-25px;
+}
+#heading h4{
+fot: size 18px !important;;
+}
+#birthRegDate, .birthRegDate input{
+    border:none;
+    background-color:#f7f7f7;
+    outline: none;
+}
+
+#birthRegDate input.form-control:focus{
+    box-shadow: none!important;
+}
+/* table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .th, .td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+  } */
+  #title-style{
+    text-align: left;
+  }
+  .birth-box {
+      padding: 2px;
+      margin:2px;
+  }
+.right-side .stamp-box{
+    height:150px;
+    width: 316px;
+    border:1px solid #000;
+}
+
+.details-box table{
+    border:none;
+
+}
+.dev{
+    border:1px solid #000;
+    padding:5px;
+    margin:5px;
+}
+.form-control{
+    border:none;
+    background-color:#f7f7f7;
+}
+#datead, .datene{
+    background-color: #f7f7f7;
+    width:40%;
+    border:none;
+}
+.marriage-type{
+    position:relative;
+    top:40px;
+}
+.marriage-finger .right-side-box, .left-side-box{
+    height:150px;
+    width:150px;
+    border:1px solid #000;
+    margin: 2px;
+    padding: 2px;
+}
+#marriage-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#marriage-table, #marriage-td, #marriage-th{
+    border:2px solid #000;
+    text-align: left;
+}

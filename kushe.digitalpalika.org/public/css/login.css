@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --background-color: #0C213A;
+    --Font-color: #FFFFFF;
+    --family: 'Roboto', sans-serif;
+}
+
+
+/* universal code  */
+.forget-login a{
+    text-decoration: none;
+}
+.sing a{
+    text-decoration: none;
+}
+/* universal code  */
+
+
+/* login header code start  */
+
+.main-card {
+    min-width: 200px;
+    width: 146%;
+    max-width: 800px;
+    /* position: absolute;
+    left: 450px;
+    top: 100px; */
+}
+
+.login-card-header {
+    background-color: #0C213A!important;
+    /* background-color: -var(--background-color); */
+    color: #FFFFFF;
+    text-align: center;
+    height: 116px;
+    width: auto;
+}
+
+.login-card-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    top: 30px;
+    /* left: 871px; */
+}
+
+.login-card-header h6 {
+    font-size: 16px;
+    line-height: 18.75px;
+    position: relative;
+    top: 30px;
+    font-weight: 500;
+}
+
+
+/* login header code end */
+
+
+/* login form  */
+.form_div{
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+}
+.form_input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:1px solid #e5e5e5;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+
+}
+select{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:1px solid #e5e5e5;
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+}
+.form_label{
+    position: absolute;
+    left:1rem;
+    top:.5rem;
+    padding: 0.25rem;
+    background-color: #fff;
+    color:#e5e5e5;
+    font-size: 15px;
+    transition: .3s;
+}
+.form_button{
+    display:block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border:none;
+    width: 100%;
+    background-color:#41b883;
+    color:#fff;
+    font-size: 14px;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.form_button:hover{
+    box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+.form_input:focus + .form_label{
+    top:-.9rem;
+    left: .8rem;
+    font-size:15px;
+    font-weight: 500;
+    color:#41b883;
+}
+.form_input:not(:placeholder-shown).form_input:not(:focus)+ .form_label{
+    top:-.9rem;
+    left: .8rem;
+    font-size: 15px;
+    font-weight: 500;
+    color:#41b883;
+}
+.form_input:focus{
+    border: 2px solid #41b883;
+}
+.pass a{
+    text-decoration: none;
+    font-family: 'Roboto'sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#0C213A;
+}
+.accout_sing  a{
+    text-decoration: none;
+}
+.text p{
+    font-family: 'Roboto'sans-serif;
+    font-size: 14px;
+    color:#0C213A;
+    font-weight: 400;
+    padding-top:10px;
+}
+/* login form  */

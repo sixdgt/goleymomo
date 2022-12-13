@@ -1,0 +1,86 @@
+
+
+.dg-search-box .dg-input input{
+    border:1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+.form-control:focus{
+    box-shadow: none!important;
+}
+#basic_addon{
+color: #ffffff!important;
+display: flex;
+align-items: center;
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+font-size:25px;
+text-align: center;
+white-space: nowrap;
+background-color: #44A64B;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+}
+.horizontal-scrollable{
+
+    overflow-x:auto!important;
+    /* border:1px solid #e5e5e5; */
+    padding: 10px;
+    background-color: #ffffff;
+
+}
+.horizontal-scrollable > li{
+    list-style:none;
+}
+.btn-ward:hover{
+    background-color: #44A64B;
+    transition: .5s all;
+    color:#ffffff;
+}
+.btn-check:focus + .btn, .btn:focus{
+    box-shadow: none!important;
+}
+
+
+.w3-card-3 {
+    margin:5px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)!important;
+}
+.w3-card-4{
+    margin: 5px!important;
+}
+.dg_sub_avtar_title {
+/* text-align: center !important; */
+/* padding: 20px; */
+font-size: 18px;
+color: #0C213A;
+font-weight: 700;
+
+}
+.dev-heading{
+font-size: 16px;
+font-weight: 900;
+color: #0c213a;
+}
+
+.dg_sub_avtar_gander{
+    font-size: 14px;
+    color:#898989;
+    font-weight: 500;
+}
+.avatar_ward{
+    font-size:500;
+    font-size:14px;
+    color:#000000;
+    text-align: justify;
+}
+#dg_sub_avtar_fd th, td{
+    font-size: 11px;
+}
+.dg_sub_avtar_family_details{
+    color: #0C213A;
+    font-size:16px;
+    font-weight: 600;
+}

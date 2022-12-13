@@ -1,0 +1,895 @@
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media screen and (max-width:700px)
+{
+
+
+
+    .dropbtn img{
+        height: 20px!important;
+    }
+    #logo a img{
+        height: 25px!important;
+        width: 25px!important;
+    }
+    .heading{
+        font-size:14px;
+    }
+    .input-group{
+        width:60%!important;
+    }
+    .search-box{
+        width: 100%!important;
+        /*left: 11rem!important;*/
+    }
+    .search-box .input-group-addon{
+        /*top: 7mapx !important;*/
+    }
+    .navbar .notification-bell {
+        position: relative;
+        height: 0.57px;
+        width: 0px;
+        background-color: #ffd2d2;
+        border-radius: 5px;
+        right:187px;
+        top: -7px;
+    }
+    .dropdown, .dropleft, .dropright, .dropup {
+        position: relative;
+
+        right:112px;
+    }
+    .nav-link img{
+
+        width:30px!important;
+        height:30px!important;
+        position: relative;
+        top: -1px !important;
+
+    }
+    .admin-title{
+
+        display: none;
+
+    }
+    .content-navbar-box{
+        overflow-x: auto;
+        /*position: relative;*/
+        height: auto;
+        width: auto;
+        /*margin-left: 50px!important;*/
+        border-radius: 5px;
+        /*padding: 15px!important;*/
+        padding-bottom: 5px;
+        /*display: flex;*/
+        text-align: center;
+
+    }
+
+
+
+    .content-navbar-box a{
+        margin-left: 5px;
+        width: 80px;
+        display: flex;
+    }
+
+    .content-navbar-box div{
+        /*margin-left: 50px!important;*/
+        width: 500px!important;
+        /*margin-left: 10px;*/
+        align-items: center;
+
+    }
+    .content-navbar-box .navbar-box-title{
+        display: none!important;
+        text-align: center!important;
+        display: inline!important;
+        /*top:10px;*/
+        padding-left: 5px;
+        font-size: 10px!important;
+        font-weight: 500!important;
+        font-family: 'Poppins' sans-serif;
+    }
+    .content-navbar-box img{
+        height: 15px!important;
+        width: 25px!important;
+        /*position: relative;*/
+        /*top:10px;*/
+        /*padding-left: 10px;*/
+        margin-left: -8px;
+
+        margin-top: 0px!important;
+
+
+    }
+
+    /*hide scroll bar*/
+    .content-navbar-box::-webkit-scrollbar {
+        height: 1px;
+    }
+
+    .content-navbar-box::-webkit-scrollbar-thumb {
+        background-color: blue;
+    }
+
+    .content-navbar-box::-webkit-scrollbar-track-piece:end {
+        margin-right: 5px;
+    }
+
+    .content-navbar-box::-webkit-scrollbar-track-piece:start {
+        margin-left: 5px;
+    }
+
+
+
+
+
+
+
+
+    .col-3 {
+        -ms-flex: 0 0 25%;
+        flex: -1 0 17%;
+        max-width: 11%;
+    }
+    .col-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 80%;
+        max-width: 103%;
+    }
+
+    .nagarik-heading{
+        font-size: 16px!important;
+    }
+    .gaupalika{
+        height:44px;
+    }
+     .menu-gaupalika, .title-nagarpalika,
+      .menu-title-commu, .menu-title-commu,
+      .menu-title-hr, .menu-title-pis, .pis1, .pis2, .hr,
+       .title-user,
+      .menu-title-budget{
+        display:none;
+    }
+
+
+
+    .main-menu{
+        overflow-y:hidden!important;
+        overflow-x: scroll!important;
+        /*padding-top: -30px;*/
+        height: auto!important;
+        width:100%!important;
+        display: flex!important;
+        padding-bottom: -20px!important;
+        /*margin-top: 0px!important;*/
+    }
+
+    .main-menu .main-menu-ul
+    {
+        display: flex;
+    }
+
+    .main-menu .box{
+        /*margin-left: 5px!important;*/
+        margin-right: -20px!important;
+        /*margin:2px;*/
+        /*margin-left: -30px;*/
+        margin-bottom: -20px!important;
+        /*padding: 0px!important;*/
+        margin-top: -5px!important;
+        height: auto;
+        text-align: center;
+        width:100px!important;
+        /* border:1px solid #e7e7e7; */
+    }
+
+
+    .main-menu p
+    {
+        text-align: center;
+        font-size: 10px!important;
+    }
+
+
+
+    /*to remove scroll line*/
+    .main-menu::-webkit-scrollbar {
+        height: 0px;
+    }
+
+    .main-menu::-webkit-scrollbar-thumb {
+        background-color: blue;
+    }
+
+    .main-menu::-webkit-scrollbar-track-piece:end {
+        margin-right: 50px;
+    }
+
+    .main-menu::-webkit-scrollbar-track-piece:start {
+        margin-left: 50px;
+    }
+
+    /*.main-menu .box:hover img{*/
+    /*    filter: none!important;*/
+    /*}*/
+    .main-menu img{
+        height: 15px!important;
+        width: 15px!important;
+        left: 20px !important;;
+    }
+    .main-menu .box:hover{
+        background-color:#fff!important;
+    }
+    .nagarik-sub-box .box{
+        height: 100px!important;
+        width: 135px!important;
+    }
+    .nagarik-sub-box .box img{
+        top:10px !important;
+        left: 41px!important;
+        height: 20px!important;
+        width: 20px!important;
+    }
+    .sub-box-title-ghar, .sub-box-title-sewa, .sub-box-title-wada{
+        text-align: center;
+        font-size: 13px!important;
+        top: 57px !important;
+        /*left: -17px!important;*/
+    }
+    .nagarik-sub-box .box .sub-box-title{
+        font-size: 13px!important;
+        top: 57px !important;
+        left: -6px!important;
+    }
+    .sub-box-title-byapaar, .sub-box-title-bides{
+        font-size: 13px!important;
+        top: 20px !important;
+        left: 20px!important;
+    }
+    .sub-box-title-basobas{
+        top: 19px !important;
+        left: 16px !important;
+        font-size: 13px!important;
+    }
+    .sub-box-title-anya{
+        top: 57px !important;
+        left: 10px!important;
+        font-size: 13px!important;
+    }
+
+    .content-view
+    {
+        width:100%!important;
+    }
+
+    #sidebar
+    {
+        width:100%;
+        /*height: 100vh;*/
+    }
+    #view
+    {
+        width:100%;
+    }
+
+    .nav-user-name
+    {
+        width: 0px;
+        display: none;
+    }
+
+    #content_bar
+    {
+        width: 100%!important;
+    }
+    #side_bar
+    {
+        width: 100%!important;
+    }
+
+
+    .dropdown-menu
+    {
+        margin-left: 5%!important;
+        width: 90%!important;
+    }
+
+
+
+    .notifications {
+        width: 100%!important;
+        right: 0px!important;
+
+
+    }
+
+
+
+
+    .button_box
+    {
+        margin: 10px!important;
+    }
+
+    .button_box img
+    {
+        margin-top: 40px!important;
+        height: 25px!important;
+        width: 25px!important;
+    }
+
+
+/*home*/
+    .dashboard-card
+    {
+        width:100%!important;
+    }
+
+    .card-title
+    {
+        margin-top: 5px!important;
+        font-size: 15px!important;
+    }
+
+    .btn_palika
+    {
+        font-size: 12px!important;
+
+        height: auto!important;
+
+    }
+
+    #breadcrumb
+    {
+        visibility: hidden;
+        margin-top:0px;
+        height: 1px;
+    }
+
+    #breadcrumb li a
+    {
+        /*position: fixed!important;*/
+        margin-right: 0px!important;
+    }
+
+    .navbar
+    {
+        height: 40px!important;
+    }
+
+    .btn-card
+    {
+        height: auto!important;
+    }
+
+    .arrow{
+
+        margin-top: 5px;
+        font-size: 15px!important;
+
+    }
+
+    .show-btn-text
+    {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+ @media screen and (max-width:1200px)
+ {
+     .dropbtn img{
+         height: 20px!important;
+     }
+     #logo a img{
+         height: 25px!important;
+         width: 25px!important;
+     }
+     .heading{
+         font-size:14px;
+     }
+     .input-group{
+         width:60%!important;
+     }
+     .search-box{
+         width: 100%!important;
+         /*left: 11rem!important;*/
+     }
+     .search-box .input-group-addon{
+         /*top: 7mapx !important;*/
+     }
+     .navbar .notification-bell {
+         position: relative;
+         height: 0.57px;
+         width: 0px;
+         background-color: #ffd2d2;
+         border-radius: 5px;
+         right:187px;
+         top: -7px;
+     }
+     .dropdown, .dropleft, .dropright, .dropup {
+         position: relative;
+ 
+         right:112px;
+     }
+     .nav-link img{
+         width:30px!important;
+         height:30px!important;
+         position: relative;
+         top: -1px !important;
+     }
+ 
+     .nav-link img.dashboard-card-img{
+         
+         width: 50px !important;
+         height: 50px !important;
+     }
+ 
+     .admin-title{
+         display: none;
+     }
+     .content-navbar-box{
+         overflow-x: auto;
+         /*position: relative;*/
+         height: auto;
+         width: auto;
+         /*margin-left: 50px!important;*/
+         border-radius: 5px;
+         /*padding: 15px!important;*/
+         padding-bottom: 5px;
+         /*display: flex;*/
+         text-align: center;
+ 
+     }
+ 
+ 
+ 
+     .content-navbar-box a{
+         margin-left: 5px;
+         width: 80px;
+         display: flex;
+     }
+ 
+     .content-navbar-box div{
+         /*margin-left: 50px!important;*/
+         width: 500px!important;
+         /*margin-left: 10px;*/
+         align-items: center;
+ 
+     }
+     .content-navbar-box .navbar-box-title{
+         display: none!important;
+         text-align: center!important;
+         display: inline!important;
+         /*top:10px;*/
+         padding-left: 5px;
+         font-size: 10px!important;
+         font-weight: 500!important;
+         font-family: 'Poppins' sans-serif;
+     }
+     .content-navbar-box img{
+         height: 15px!important;
+         width: 25px!important;
+         /*position: relative;*/
+         /*top:10px;*/
+         /*padding-left: 10px;*/
+         margin-left: -8px;
+ 
+         margin-top: 0px!important;
+ 
+ 
+     }
+ 
+     /*hide scroll bar*/
+     .content-navbar-box::-webkit-scrollbar {
+         height: 1px;
+     }
+ 
+     .content-navbar-box::-webkit-scrollbar-thumb {
+         background-color: blue;
+     }
+ 
+     .content-navbar-box::-webkit-scrollbar-track-piece:end {
+         margin-right: 5px;
+     }
+ 
+     .content-navbar-box::-webkit-scrollbar-track-piece:start {
+         margin-left: 5px;
+     }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     .col-3 {
+         -ms-flex: 0 0 25%;
+         flex: -1 0 17%;
+         max-width: 11%;
+     }
+     .col-9 {
+         -ms-flex: 0 0 75%;
+         flex: 0 0 80%;
+         max-width: 103%;
+     }
+ 
+     .nagarik-heading{
+         font-size: 16px!important;
+     }
+     .gaupalika{
+         height:44px;
+     }
+      .menu-gaupalika, .title-nagarpalika,
+       .menu-title-commu, .menu-title-commu,
+       .menu-title-hr, .menu-title-pis, .pis1, .pis2, .hr,
+        .title-user,
+       .menu-title-budget{
+         display:none;
+     }
+ 
+ 
+ 
+     .main-menu{
+         overflow-y:hidden!important;
+         overflow-x: scroll!important;
+         /*padding-top: -30px;*/
+         height: auto!important;
+         width:100%!important;
+         display: flex!important;
+         padding-bottom: -20px!important;
+         /*margin-top: 0px!important;*/
+     }
+ 
+     .main-menu .main-menu-ul
+     {
+         display: flex;
+     }
+ 
+     .main-menu .box{
+         /*margin-left: 5px!important;*/
+         margin-right: -20px!important;
+         /*margin:2px;*/
+         /*margin-left: -30px;*/
+         margin-bottom: -20px!important;
+         /*padding: 0px!important;*/
+         margin-top: -5px!important;
+         height: auto;
+         text-align: center;
+         width:100px!important;
+         /* border:1px solid #e7e7e7; */
+     }
+ 
+ 
+     .main-menu p
+     {
+         text-align: center;
+         font-size: 10px!important;
+     }
+ 
+ 
+ 
+     /*to remove scroll line*/
+     .main-menu::-webkit-scrollbar {
+         height: 0px;
+     }
+ 
+     .main-menu::-webkit-scrollbar-thumb {
+         background-color: blue;
+     }
+ 
+     .main-menu::-webkit-scrollbar-track-piece:end {
+         margin-right: 50px;
+     }
+ 
+     .main-menu::-webkit-scrollbar-track-piece:start {
+         margin-left: 50px;
+     }
+ 
+     /*.main-menu .box:hover img{*/
+     /*    filter: none!important;*/
+     /*}*/
+     .main-menu img{
+         height: 15px!important;
+         width: 15px!important;
+         left: 20px !important;;
+     }
+     .main-menu .box:hover{
+         background-color:#fff!important;
+     }
+     .nagarik-sub-box .box{
+         height: 100px!important;
+         width: 135px!important;
+     }
+     .nagarik-sub-box .box img{
+         top:10px !important;
+         left: 41px!important;
+         height: 20px!important;
+         width: 20px!important;
+     }
+     .sub-box-title-ghar, .sub-box-title-sewa, .sub-box-title-wada{
+         text-align: center;
+         font-size: 13px!important;
+         top: 57px !important;
+         /*left: -17px!important;*/
+     }
+     .nagarik-sub-box .box .sub-box-title{
+         font-size: 13px!important;
+         top: 57px !important;
+         left: -6px!important;
+     }
+     .sub-box-title-byapaar, .sub-box-title-bides{
+         font-size: 13px!important;
+         top: 20px !important;
+         left: 20px!important;
+     }
+     .sub-box-title-basobas{
+         top: 19px !important;
+         left: 16px !important;
+         font-size: 13px!important;
+     }
+     .sub-box-title-anya{
+         top: 57px !important;
+         left: 10px!important;
+         font-size: 13px!important;
+     }
+ 
+     .content-view
+     {
+         width:100%!important;
+     }
+ 
+     #sidebar
+     {
+         width:100%;
+         /*height: 100vh;*/
+     }
+     #view
+     {
+         width:100%;
+     }
+ 
+     .nav-user-name
+     {
+         width: 0px;
+         display: none;
+     }
+ 
+     #content_bar
+     {
+         width: 100%!important;
+     }
+     #side_bar
+     {
+         width: 100%!important;
+     }
+ 
+ 
+     .dropdown-menu
+     {
+         margin-left: 5%!important;
+         width: 90%!important;
+     }
+ 
+ 
+ 
+     .notifications {
+         width: 100%!important;
+         right: 0px!important;
+ 
+ 
+     }
+ 
+ 
+ 
+ 
+     .button_box
+     {
+         margin: 10px!important;
+     }
+ 
+     .button_box img
+     {
+         margin-top: 40px!important;
+         height: 25px!important;
+         width: 25px!important;
+     }
+ 
+ 
+ /*home*/
+     .dashboard-card
+     {
+         width:100%!important;
+     }
+ 
+     .card-title
+     {
+         margin-top: 5px!important;
+         font-size: 15px!important;
+     }
+ 
+     .btn_palika
+     {
+         font-size: 12px!important;
+ 
+         height: auto!important;
+ 
+     }
+ 
+     #breadcrumb
+     {
+         visibility: hidden;
+         margin-top:0px;
+         height: 1px;
+     }
+ 
+     #breadcrumb li a
+     {
+         /*position: fixed!important;*/
+         margin-right: 0px!important;
+     }
+ 
+     .navbar
+     {
+         height: 40px!important;
+     }
+ 
+     .btn-card
+     {
+         height: auto!important;
+     }
+ 
+     .arrow{
+ 
+         margin-top: 5px;
+         font-size: 25px!important;
+ 
+ 
+     }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+  @media screen and (max-width:1200px)
+  {
+      .content-navbar-box{
+          overflow-x: auto;
+          /*position: relative;*/
+          height: auto;
+          width: auto;
+          /*margin-left: 50px!important;*/
+          border-radius: 5px;
+          /*padding: 15px!important;*/
+          padding-bottom: 5px;
+          /*display: flex;*/
+          text-align: center;
+ 
+      }
+ 
+ 
+ 
+      .content-navbar-box a{
+          margin-left: 5px;
+          width: 80px;
+          display: flex;
+      }
+ 
+      .content-navbar-box div{
+          /*margin-left: 50px!important;*/
+          width: 500px!important;
+          /*margin-left: 10px;*/
+          align-items: center;
+ 
+      }
+      .content-navbar-box .navbar-box-title{
+          display: none!important;
+          text-align: center!important;
+          display: inline!important;
+          /*top:10px;*/
+          padding-left: 5px;
+          font-size: 10px!important;
+          font-weight: 500!important;
+          font-family: 'Poppins' sans-serif;
+      }
+      .content-navbar-box img{
+          height: 15px!important;
+          width: 25px!important;
+          /*position: relative;*/
+          /*top:10px;*/
+          /*padding-left: 10px;*/
+          margin-left: -8px;
+ 
+      }
+ 
+      /*hide scroll bar*/
+      .content-navbar-box::-webkit-scrollbar {
+          height: 1px;
+      }
+ 
+      .content-navbar-box::-webkit-scrollbar-thumb {
+          background-color: blue;
+      }
+ 
+      .content-navbar-box::-webkit-scrollbar-track-piece:end {
+          margin-right: 5px;
+      }
+ 
+      .content-navbar-box::-webkit-scrollbar-track-piece:start {
+          margin-left: 5px;
+      }
+ 
+ 
+ 
+ 
+      .btn-card .card-body{
+          overflow-y: scroll;
+          scrollbar-width: thin;
+      }
+ 
+      .main-menu .box{
+ 
+          width: 50px;
+          height: auto;
+          /*border:1px solid #e7e7e7;*/
+          /*margin:10px;*/
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 5px;
+          border-radius: 8px;
+          /*top:50%;*/
+          /*left: 50%;*/
+          /*transform: translate(-50% , -50%);*/
+          -webkit-transition: all 0.5s ease-in-out;
+          /* border: 1px solid green; */
+      }
+ 
+      .main-menu img{
+          /*height: 30px;*/
+          /*width: 30px;*/
+          /*position: relative;*/
+          /*left: 35px;*/
+          /*top:20px;*/
+ 
+          height: 15px!important;
+          width: 15px!important;
+          display: block;
+          margin-top: 20px;
+          margin-left: auto!important;
+          margin-right: auto!important;
+      }
+ 
+ 
+      .main-menu .menu-title
+      {
+          text-align: center;
+          font-size: 10px!important;
+      }
+ 
+ 
+ 
+  }
+ 
